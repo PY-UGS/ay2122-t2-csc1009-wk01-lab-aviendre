@@ -1,0 +1,29 @@
+public class Example3
+{
+    //---------------------------------------
+    // Prints course name based on the course code input by the user.
+    //---------------------------------------
+    public static void main (String[] args)
+    {
+        System.out.println("Please input your course code CSCxxxx: ");
+        String courseCode = System.console().readLine();   
+        switch(courseCode)   
+        {   
+            case "CSC1006":   
+                System.out.println("Mathematics 2"); 
+                break;   
+            case "CSC1007":   
+                System.out.println("Operating Systems"); 
+                break;   
+            case "CSC1008":   
+                System.out.println("Data Structures and Algorithms"); 
+                break;   
+            case "CSC1009":   
+                System.out.println("Object-Oriented Programming"); 
+                break;   
+            default:    
+                System.out.println("Unknown Course"); 
+                break;   
+        }   
+    }
+}
